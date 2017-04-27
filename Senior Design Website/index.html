@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Computational Modeling of Pulmonary Vascular Dysfunction in Chronic Thromboembolic Pulmonary Hypertension</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+<body>
+
+  <div class="header">
+    <div id="header-text">
+      <h1>Computational Modeling of Pulmonary Vascular Dysfunction in Chronic Thromboembolic Pulmonary Hypertension</h1>
+      <h2>Assessing the Predictive Ability of Currently Unmeasured Physiological and Anatomical <br> Parameters</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="overview-button">
+      <h2>Overview</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="whoweare-button">
+      <h2>Who We Are</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="background-button">
+      <h2>Background</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="implementeddesign-button">
+      <h2>Implemented Design</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="results-button">
+      <h2>Results</h2>
+    </div>
+  </div>
+
+  <div class="button">
+    <div id="futuredirections-button">
+      <h2>Future Directions</h2>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="overview-content">
+      <p>UC San Diego is one of the leading centers for the treatment of chronic thromboembolic pulmonary hypertension (CTEPH), a rare pulmonary hypertension disease caused
+        bychronic clots in the pulmonary arteries, which can result in right heart failure. CTEPH is often curable by pulmonary thromboendarterectomy (PTE) surgery, but there
+        is a small population of patients that experience postoperative residual hypertension. Therefore, there is a need for a minimally invasive method to better identify
+        prognostic biomarkers for PTE candidates. This will be useful for elucidating CTEPH pathobiology, as well as providing clinicians with a set of characteristic
+        parameters to measure preoperatively to improve CTEPH treatment.</p>
+      <p>In partnership with UC San Diego’s Cardiovascular Imaging Laboratory (CViL), our team of senior bioengineering undergraduates worked to develop a method of
+        generating patient-specific CTEPH simulations using CircAdapt, a mathematical model of the human heart and circulation. In doing so, from our simulations, we measured
+        parameters characterizing heart and vessel function that are not routinely evaluated in patients currently. We also analyzed the prognostic value of these identified
+        parameters to determine the usefulness of our developed simulation method in a clinical setting.</p>
+    </div>
+    <div id="whoweare-content">
+      <h2>Elliot Rowe<img src="img\ElliotProfile.jpg" align="right" /></h2>
+      <p>Elliot is a Bioengineering: Biotechnology major in his Senior year of study at the University of California, San Diego. He is currently planning on working on
+        developing visualizations for flux based analysis in Professor Bernhard Palsson’s lab after graduation. Originally from Monterey here in California, he enjoys
+        powerlifting, baking, and playing tabletop games with his friends. This senior design project served as a great way to both practice and learn new coding skills as
+        well as explore different types of physiological modeling.<br><br><br></p>
+      <h2>Jeremy Tran<img src="img\Jeremy_profile_picture.jpg" align="right" /></h2>
+      <p>Jeremy Tran is majoring in Bioengineering:Biotechnology with minors in Chemistry and General Biology and plans to graduate Spring 2017 from the University of
+        California, San Diego. Upon graduation he plans to do research during a gap year before applying to graduate school in Bioengineering. His favorite part of the Senior
+        Design Project was learning about cardiovascular modelling and participating in the translational medicine research process. Jeremy is from San Diego and enjoys road
+        biking, playing soccer, and visiting national parks on road trips.<br><br><br><br></p>
+      <h2>Wendy Yu<img src="img\Wendy_profile.jpg" align="right" /></h2>
+      <p>Wendy Yu is a Bioengineering: Biotechnology major in her final year at the University of California, San Diego. After graduation, Wendy will pursue her master’s
+        degree in Bioengineering at the University of Pennsylvania where she hopes to dive into immunoengineering and immunotherapy research in preparation for a career in
+        the biopharmaceutical industry. Her favorite part of this project was gaining experience in different types of computational modeling and seeing the impact of disease
+        modeling in clinical settings. Originally from San Mateo, CA, Wendy enjoys road tripping across the West Coast, drawing, and finding new shows on Netflix.<br><br><br>
+      </p>
+      <h2>Hanwen Wang<img src="img\Hanwen Profile Pic.jpg" align="right" /></h2>
+      <p>Hanwen Wang is a Biotechnology major senior at University of California, San Diego. He will pursue master's degree in Bioengineering at Johns Hopkins University
+        focusing on computational biology and oncology as a step toward PhD education. He believes that this project provides a great way to force four biotech majors with no
+        human physiology background to learn the circulatory system. He is originally from Beijing where apparently fresh air is sold at $115 per bottle according to ‘the
+        fake media’, so he enjoys exclusively indoor activities such as playing the piano or the harmonica.</p>
+      <h2>Francisco Contijoch, PhD<img src="img\francisco.jpg" align="right" /></h2>
+      <p>Dr. Contijoch is a University of California President’s Postdoctoral Fellow focusing on the role of imaging as a diagnostic and research tool in cardiovascular
+        disease.<br><br>
+        A graduate of Johns Hopkins and of the HHMI/NIBIB Interfaces Scholar Program at the University of Pennsylvania, he is a biomedical engineer with research focusing on
+        the use of imaging for advanced assessment of cardiovascular structure, function, and disease.<br><br>
+        Prior projects have assessed load-independent measures of cardiac function via imaging-derived PV loops, quantified contractile function of beat types during
+        arrhythmias, and evaluated mitral valve anatomy and function for surgical planning.<br><br>
+        Current projects focus on improvement of coronary artery imaging with CT and assessment of right ventricular and pulmonary artery function and material
+        properties.<br><br>
+        <a href="http://cvil.ucsd.edu/">CViL at UCSD</a></p>
+    </div>
+    <div id="background-content">
+      <h2>CTEPH</h2>
+      <figure>
+        <img src="/img/fig1_CTEPH.jpg" />
+        <figurecaption><br><b>Figure 1:</b> The pulmonary emboli (arising from a recurrent pulmonary embolism or in situ) leads to endothelial remodelling in the small
+          vasculature in the unoccluded part of the pulmonary vasculature similar to idiopathic pulmonary hypertension. The added resistance leads the right heart increasing
+          in volume (hypertrophy) to maintain cardiac output, which eventually fails and leads to decompensation of the right heart and dyssynchrony between the left and
+          right heart.</figurecaption>
+        </figure>
+      <p>Chronic thromboembolic pulmonary hypertension (CTEPH) is a form of pulmonary hypertension (PH) caused by an increase in resistance due to significant organized
+        thromboembolic material that is not properly reabsorbed by the body after a pulmonary embolism. The chronic clots impede blood flow in prominent pulmonary arteries and
+        lead to small vascular disease and PH due to vascular remodeling from the increased flow and shear stress in the unoccluded area of the vasculature. Patients with CTEPH
+        experience shortness of breath, chest pain, and have limited cardiac output response to increased physiological demand. CTEPH eventually leads to right ventricle heart
+        failure because the heart must overcome the added pulmonary vascular resistance (PVR) and gets remodelled. Studies report between 0.6-4.6% of PE patients (of which there
+        are around 900,000 a year) develop CTEPH.<sup>1</sup> Although it is suggested that there are 12,000 cases per year, CTEPH is considerably underdiagnosed since there are
+        only 500-2,500 diagnosed cases every year.<sup>2</sup> The lack of risk factors predicting CTEPH from acute pulmonary embolism has prevented the development of
+        preventative measures and screening programs due to the similar symptoms to those of other conditions.3 Patients with CTEPH are also often misdiagnosed with other
+        cardio-respiratory diseases because CTEPH symptoms are nonspecific.<br><br>
+        Pulmonary thromboendarterectomy (PTE) currently provide a curative solution. The aim of PTE
+        is to remove the pulmonary artery obstruction to decrease the PVR, but approximately 10-15% of patients that have undergone PTE have unexplained persistent or
+        recurrent PH after the procedure.<sup>1</sup> Since CTEPH is underdiagnosed, patients who unknowingly have had CTEPH for years face greater risk of residual hypertension after
+        surgery. <b>As a result, there is a need to learn about operable CTEPH by computational modeling in order to better diagnose the disease in its early stage.</b><br><br>
+        Identification of risk factors using computational modeling of CTEPH will allow physicians to provide better diagnosis for CTEPH patients, particularly at UCSD where
+        most CTEPH cases are handled. This model could allow patient specific simulation that can be analyzed by the physician to help understand the particular patient’s
+        hemodynamic status. The model could provide another metric for physicians to analyze by putting together measurements collected in echographies, right heart
+        catheterizations, CT scans, and other CTEPH diagnostic measurements. An in silico predictive model can increase PTE success rate by providing more information
+        that a physician could use to understand a patient’s condition and propose appropriate treatments. This model could potentially drive a push in the CTEPH field to
+        standardize criteria for what constitutes an operable disease, since different expert centers have varying standards. This is evident by the fact that every CTEPH
+        expert center publishes different statistics regarding the percentage of CTEPH patients that are deemed operable. In the long term, the model will allow physicians
+        to provide more accurate and specific predictions on how PTE will affect patient’s condition. This will be an improvement to the traditional approach of relying on
+        more anecdotal experiences of past surgical outcomes since CTEPH is an orphan disease and could increase attention for CTEPH, which is often overlooked when
+        cardiorespiratory patients are being diagnosed. Researchers would also benefit because this model will allow them to identify important parameters that could improve
+        understanding of CTEPH, as well as elucidate new treatment options.<br></p>
+        <h2>CircAdapt</h2>
+        <img src="img\fig2_circAdapt.png" align="right" />
+        <p>CircAdapt is a closed loop, lumped parameter cardiovascular mathematical MATLAB that uses a system of differential equations to simulate beat-to-beat hemodynamics
+          and mechanics using around 30 state variables.<sup>4</sup> Figure 2 shows a schematic representation of the CircAdapt model, with the PuArt, Pu, and PuVen of
+          particular interest to us for modelling CTEPH.<sup>4</sup> CircAdapt can be run on a personal computer and is open-source and computationally inexpensive. It allows real-time simulations at different parameter values or
+          disease states. The model is composed of muscular chambers, elastic tubes, valves and peripheral resistances.<sup>5</sup> The program was last updated in 2015, and
+          researchers at the University of Maastricht have since focused on observing the effects of pathological-specific conditions and testing hypotheses concerning mechanics
+          of the heart.<sup>6</sup> The principle advantages of building upon this model to create a patient-specific CTEPH model is that it is composed of modules that are fairly
+          adaptable if it is ever realized that the program should be modified in order to simulate the disease. CircAdapt was also chosen for this project because of the work
+          done on idiopathic pulmonary hypertension (small vascular disease arising independently of clots formed in the pulmonary arteries), which will serve as our starting
+          point to this project.<sup>7</sup><br><br>
+          The greatest disadvantage with CircAdapt is that it is a lumped parameter model that treats hemodynamic elements as a series of equivalent elements in an electric
+          circuit. It was only with tremendous advancements in physiological knowledge that CircAdapt was able to function using meaningful physiological values. There are
+          numerous required and often unknown parameters that make it difficult for the model to match normal physiology, let alone diseased states.</p>
+          <h2>References</h2>
+          <ol>
+            <li>Schölzel, B. E., et al. "Chronic thromboembolic pulmonary hypertension." <i>Netherlands Heart Journal</i> 22.12 (2014): 533-541.</li>
+            <li>Tapson, V., &amp Humbert, M. Incidence and prevalence of chronic thromboembolic pulmonary hypertension: from acute to chronic pulmonary embolism. <i>Proc Am
+              Thorac Soc.</i> Sep;3(7):564-7 (2006).</li>
+            <li>Arts, T., Delhaas, T., Prinzen F., Lumens, J. The CircAdapt Model Manual. 2015.</li>
+            <li>Mercier, O., &amp Fadel, E. Chronic thromboembolic pulmonary hypertension: animal models. Eur Respir J. 41: 1200-1206 (2013).</li>
+            <li>Arts T, Delhaas T, Bovendeerd P, Verbeek X and Prinzen FW. Adaptation to mechanical load determines shape and properties of heart and circulation, the
+              CircAdapt model. Am J Physiol Heart Circ Physiol 288: 1943-1954, 2005</li>
+            <li>Lumens J, Delhaas T, Kirn B, Arts T (2009) Three-wall segment (TriSeg) model describing mechanics and hemodynamics of ventricular interaction. Ann Biomed Eng
+              37: 2234-2255).</li>
+            <li>Lumens, J.E. Patient-Specific Cardiovascular Modeling in Pulmonary Hypertension. Diss. Maastricht U, 2010. S.I.: Dlgraphics, 2010.</li>
+          </ol>
+          <br><br><p>Written by Jeremy Tran</p>
+    </div>
+    <div id="implementeddesign-content">
+      <p>Our project was to test the resolution of CircAdapt for CTEPH and develop a patient specific fitting algorithm. The final implemented design solution is a method to
+        investigate potential prognostic or risk factors for CTEPH that are most indicative of good or bad surgical outcomes in the already existing CircAdapt model. This will
+        allow us to determine if what we are trying to obtain (patient specific simulations of CTEPH to understand the pathobiology of the disease and shed light on PTE outcome)
+        is already within CircAdapt or if future work should be done to build a more detailed pulmonary module, which will require more than a quarter to complete.
+        Hypothetical CTEPH simulations were performed in three cases: (1) A resistive form due to microvascular disease (idiopathic PH), (2) CTEPH arising from stiffness in
+        the pulmonary arteries, and (3) CTEPH induced by both resistive and stiffness elements. <b>Patient-specific simulations were created for 36 CTEPH patients to collect
+        measurements concerning the heart and the pulmonary vasculature that are not currently measured in patients preoperatively. Taking these measurements, Receiver
+        Operator Characteristic (ROC) Curve Analysis was used to identify parameters that best separate and predict good and bad outcomes.</b></p>
+        <h2>Mean Pulmonary Arterial Pressure (mPAP) and Pulmonary Artery Pulse Pressure (PP) Fitting</h2>
+        <p>In order to simulate CTEPH on a patient-specific basis, reference CTEPH simulations were first generated to cut down on computational time. This was done to
+        initialize our patient-specific simulations to ensure that our simulations would converge to a steady-state solution already in bounds of the CTEPH/PH regime.
+        Using our patient sample, we separated patients into low, medium, and high severity CTEPH groups based on their mPAP values and derived average preoperative
+        measurements for these three CTEPH groups. These average preoperative measurements for each CTEPH severity are shown in Table 1. Starting from a reference
+        simulation with normal hemodynamics and mechanical load obtained from CircAdapt, both the mPAP and the pulmonary artery pulse pressure were incremented by
+        iteratively increasing the mean arteriovenous pulmonary pressure drop and the pulmonary arterial stiffness exponent, respectively, to create three simulated
+        CTEPH patients with low, medium, and high severity CTEPH. Between each increase, AdaptRest and AdaptExc (adapt functions within CircAdapt) were run to allow the
+        diameters and wall volumes of the heart to change to minimize shear stresses caused by the upticks in pulmonary pressure drops and pulmonary artery stiffness.
+        Although AdaptExc was prescribed to be used along with increasing heart rate and cardiac output to simulate exertion (Walmsley, 2015), this was not done since
+        this would drastically increase our computational time (which became a big issue), and patients with CTEPH typically cannot exercise due to their shortness of
+        breath. A generalized schematic of this process for generating the CTEPH reference patients (and later the patient specific simulations) is shown in Figure 1.</p>
+    </div>
+    <div id="results-content">
+      <h2>CTEPH Simulations via CircAdapt</h2>
+      <figure>
+        <img src="img\Figure 1.png" />
+        <figurecaption><br><b>Figure 1:</b> Comparison of averaged preoperative patient mPAP and PP values with those derived from simulated CTEPH cases. Error bars represent standard
+          deviations.</figurecaption>
+      </figure>
+      <p>Three cases of CTEPH were simulated to identify the approach that yielded results that most accurately represented average patient values of different levels of
+        severity (low, medium, and high). The following cases are detailed below:</p>
+      <ul type="disc">
+        <li>Case I: Resistive form of CTEPH due to microvascular disease (idiopathic pulmonary hypertension)</li>
+        <li>Case II: CTEPH arising from stiffness in the pulmonary arteries</li>
+        <li>Case III: CTEPH induced by both resistive and stiffness elements</li>
+      </ul>
+      <p>As seen in Figure 1, Case I produced simulated mean pulmonary artery pressure (mPAP) values that matched average preoperative values. However, fitting the mPAP alone
+        and focusing solely on the resistive elements of the disease was not sufficient in matching the pulmonary artery pulse pressure (PP). Case II results were not shown
+        because altering stiffness alone produced results that did not converge. Lastly, fitting both resistance and stiffness in Case III did yield results that best matched
+        preoperative patient mean pulmonary artery pressure (mPAP) and pulse pressure (PP) values. Hence, Case III was used to the primary approach to initialize and create
+        patient-specific simulations.</p>
+      <p>In addition, we evaluated the pressure-volume loops (Figure 2) of the right and left ventricles (RV, LV)  and found that our simulations produced the expected
+        physiological adaptations to the heart. As seen in Figure 2A, the pressure required to pump blood in the RV increases with greater CTEPH severity due to higher RV
+        dysfunction and hypertrophy from the increased mechanical load to the right heart. Moreover, in Figure 2B, the LV end systolic and diastolic volumes decrease with
+        greater CTEPH severity due to RV decompensation, leading to LV underfilling and leftward septal bulging.<br></p>
+      <figure>
+        <img src="img\Figure 2.png" />
+        <figurecaption><br><b>Figure 2:</b> Comparison of (A) RV and (B) LV pressure-volume loops for a healthy reference patient simulation and low, medium, and high
+          severity CTEPH simulation via changing both resistance and stiffness.</figurecaption>
+      </figure>
+      <h2>Receiver Operating Characteristic (ROC) Curve Analysis</h2>
+      <p>After conducting patient-specific simulations for 37 CTEPH simulations, we extracted 30 different parameters characterizing the function and qualities of the heart
+        and blood vessels. After performing single-parameter ROC analysis for all 30 parameters, we found that the parameters listed in Table 1 best separate and predict poor
+        PTE outcomes (having a postoperative mPAP greater than 25 mmHg) with area under the curve (AUC) values greater than 0.8. These parameters make clinical sense, because
+        with the highest AUC values, PVR and mPAP have been previously shown to correlate with poor PTE outcomes. Meanwhile, the extent of resistance versus the stiffening of
+        the pulmonary artery drives CTEPH and hence, plays a predictive role for PTE. RV-PV coupling is defined as the ratio between the arterial load and RV contractility,
+        both of which describe RV function and the RV’s ability to transfer energy to the pulmonary vasculature. Finally, RVEF deteriorates with RV remodeling and is
+        indicative of heart failure.<br><br>
+        Once the top prognostic parameters were determined, we wanted to determine if the parameters derived from simulations added any prognostic value to current
+        measurements that are measured by clinicians. These typical clinical measurements include the mPAP, PP, and cardiac output (CO), which have a combined AUC value of
+        0.888. As seen in Table 2, the simulation-derived parameters, paired with clinical parameters, increase the AUC value for the most part. Therefore, simulation-derived
+        parameters can provide clinicians with additional information to better predict PTE outcomes.<br><br>
+        Based on the results, our method of iteratively fitting the mPAP and PP to produce patient-specific CTEPH simulations has many potential clinical applications.
+        Currently, risk factors for CTEPH are not well-known or well-characterized because the disease is considerably underdiagnosed, and many of its symptoms are nonspecific.
+        This makes it difficult for clinicians to find the best solution for treating individual CTEPH cases. Through our simulations, we can characterize an individual’s CTEPH
+        profile and noninvasively obtain measurements of the heart and blood vessels that clinicians currently cannot measure due to the inaccuracy or invasiveness of the
+        procedure. In doing so, clinicians can make more medically-informed decisions concerning which method of treatment, such as PTE surgery, is most suitable for the
+        individual patient. Therefore, using our method, we hope to lower the rate of residual hypertension faced by CTEPH patients post-PTE surgery and hence, improve the
+        curative success of PTE.</p>
+        <figure>
+          <img src="img\Table 1.png" />
+          <figurecaption><br><b>Table 1:</b> Top 9 prognostic parameters based on AUC values greater than 0.8.</figurecaption>
+        </figure>
+        <figure>
+          <img src="img\Table 2.png" />
+          <figurecaption><br><b>Table 2:</b> AUC values for different combinations of top simulated parameters paired with clinically measured parameters
+            (mPAP, CO, PP)</figurecaption>
+        </figure>
+        <br><br><p>Written by Wendy Yu</p>
+    </div>
+    <div id="futuredirections-content">
+      <h2>Future Directions</h2>
+      <p>Previously, CTEPH was considered to be a more resistive, clot-based disease, but research over the years and confirmed by the work done in this project, has shown
+        that CTEPH is a combination of microvascular disease and stiff vessels.<br><br>
+        To move this project forward, we would want to optimize our simulations so that we can better fit patients and replicate CTEPH. Currently, we are only fitting the
+        mPAP and the pulmonary artery pulse pressure, which directly affect the resistive and stiffness components of the disease, respectively, and describe the pressure
+        loading conditions on the right ventricle. However, modeling CTEPH with these two parameters is simplistic. Hence, in order to better match physiology, it would be
+        best to add complexity to our simulations by expanding the fitting criteria (trying to match diastolic pulmonary arterial pressure for example) to see if the AUC
+        values increase.<br><br>
+        We would also like to increase our patient population so that we can yield more reliable results, since the 40 patients analyzed in this project could very well be a
+        narrow slice of the CTEPH population. It would also be good to run simulations  on patients with idiopathic pulmonary hypertension using our method to compare to CTEPH
+        patients, since iPAH patients aren’t candidates for PTE in the first place. Increasing our sample would definitely help in the AUC calculations since our values are very
+        rough to to the jagged nature of our plots (due to small patient sample) as seen in the Results section. Using our method, it would be interesting to investigate
+        patients with more resistive disease, such as those with acute pulmonary embolism, to determine if there are any differences in surgical outcomes between patients with
+        more resistive or stiff pulmonary hypertension. Also, we could evaluate if prognostic markers differ between patient types. In doing so, we can use our project to allow
+        clinicians to better characterize different types of pulmonary hypertension and more effectively treat patients.<br><br>
+        CircAdapt also simplifies the actual pulmonary vasculature and models it as a single resistive component. Our original project design was to change CircAdapt so that
+        the pulmonary vasculature could be split into right and left lung by creating two resistive components in parallel to improve the accuracy of the model. However, due
+        to time restrictions and the level of complexity, this project design was not pursued. From our experience this past year, we propose that before splitting the
+        pulmonary vasculature into right and left lung, a resistive component should be added to the pulmonary artery. This could be initially investigated by modifying the
+        bernoulli pressure drop across the pulmonary valve (RvPulArt seen in Figure 2 in the Background section) to simulate a clot before completely introducing a completely
+        new module in CircAdapt.<br><br>
+        In summary we propose this course of action for the development of better modelling of CTEPH in CircAdapt:</p>
+        <ol>
+          <li>Modify pulmonary valve state variables (such as pressure loss through that element) to mimic a resistive element in the pulmonary artery.</li>
+          <li>Create a separate module of the pulmonary artery to add not only resistance but impedance to the pulmonary artery (separate from those of the microvasculature).</li>
+          <li>Split the lung module into left and right lung, or diseased and non diseased lung, to simulate the effect of the difference of perfusion in the microvasculature in CTEPH pathobiology.</li>
+        </ol>
+        <br><br><p>Written by Hanwen Wang</p>
+    </div>
+    <div id="logos">
+      <img src="img\ucsd-jacobs-logo-blue-gold.png" />
+      <img src="img\logo_cvil_new.jpg" hspace="10" />
+      <img src="img\be-logo-design-2_0.png" />
+    </div>
+  </div>
+<p>Website Design and Implementation by Elliot Rowe</p>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src='js/main.js'></script>
+</body>
+</html>
