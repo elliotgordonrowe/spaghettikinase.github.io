@@ -77,15 +77,23 @@ figure {
   font-family: 'Oswald', sans-serif;
   color: #000;
   background: #F9FD48; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #fff991,#F9FD48 ); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #fff991, #F9FD48); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #fff991, #F9FD48); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #fff991, #F9FD48); /* Standard syntax */
+  background: -webkit-linear-gradient(left top, #fff99e,#faff44 ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #fff99e, #faff44); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #fff99e, #faff44); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #fff99e, #faff44); /* Standard syntax */
 }
 
 #logos {
   position: absolute;
   bottom: 0px;
+}
+
+.mouseover {
+  background: #F9FD48; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #faff44,#fff99e ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #faff44,#fff99e); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #faff44,#fff99e); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #faff44,#fff99e); /* Standard syntax */
 }
 
 .active {

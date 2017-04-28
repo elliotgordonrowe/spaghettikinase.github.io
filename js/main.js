@@ -5,6 +5,16 @@ function main() {
   $("#implementeddesign-content").hide();
   $("#results-content").hide();
   $("#futuredirections-content").hide();
+  $('.button').on('mouseenter', function(){
+    if ($(this).attr('class') != 'button active') {
+      $(this).toggleClass('mouseover');
+    }
+  })
+  $('.button').on('mouseleave', function(){
+    if ($(this).attr('class') != 'button active') {
+      $(this).toggleClass('mouseover');
+    }
+  })
   $('.button').on('click', function() {
     $(".button").removeClass("active");
     $(this).addClass("active");
