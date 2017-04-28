@@ -6,47 +6,45 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
-
   <div class="header">
     <div id="header-text">
       <h1>Computational Modeling of Pulmonary Vascular Dysfunction in Chronic Thromboembolic Pulmonary Hypertension</h1>
       <h2>Assessing the Predictive Ability of Currently Unmeasured Physiological and Anatomical <br> Parameters</h2>
     </div>
-  </div>
-
-  <div class="button">
-    <div id="overview-button">
-      <h2>Overview</h2>
+    <div class="button">
+      <div id="overview-button">
+        <h2>Overview</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="button">
-    <div id="whoweare-button">
-      <h2>Who We Are</h2>
+    <div class="button">
+      <div id="whoweare-button">
+        <h2>Who We Are</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="button">
-    <div id="background-button">
-      <h2>Background</h2>
+    <div class="button">
+      <div id="background-button">
+        <h2>Background</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="button">
-    <div id="implementeddesign-button">
-      <h2>Implemented Design</h2>
+    <div class="button">
+      <div id="implementeddesign-button">
+        <h2>Implemented Design</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="button">
-    <div id="results-button">
-      <h2>Results</h2>
+    <div class="button">
+      <div id="results-button">
+        <h2>Results</h2>
+      </div>
     </div>
-  </div>
 
-  <div class="button">
-    <div id="futuredirections-button">
-      <h2>Future Directions</h2>
+    <div class="button">
+      <div id="futuredirections-button">
+        <h2>Future Directions</h2>
+      </div>
     </div>
   </div>
 
@@ -60,7 +58,8 @@
       <p>In partnership with UC San Diego’s Cardiovascular Imaging Laboratory (CViL), our team of senior bioengineering undergraduates worked to develop a method of
         generating patient-specific CTEPH simulations using CircAdapt, a mathematical model of the human heart and circulation. In doing so, from our simulations, we measured
         parameters characterizing heart and vessel function that are not routinely evaluated in patients currently. We also analyzed the prognostic value of these identified
-        parameters to determine the usefulness of our developed simulation method in a clinical setting.</p>
+        parameters to determine the usefulness of our developed simulation method in a clinical setting.
+      <br><br><p>Written by Jeremy Tran</p>
     </div>
     <div id="whoweare-content">
       <h2>Elliot Rowe<img src="img\ElliotProfile.jpg" align="right" /></h2>
@@ -93,7 +92,8 @@
         arrhythmias, and evaluated mitral valve anatomy and function for surgical planning.<br><br>
         Current projects focus on improvement of coronary artery imaging with CT and assessment of right ventricular and pulmonary artery function and material
         properties.<br><br>
-        <a href="http://cvil.ucsd.edu/">CViL at UCSD</a></p>
+        <a href="http://cvil.ucsd.edu/">CViL at UCSD</a>
+      <br><br><br><br><p>Written by Elliot Rowe</p>
     </div>
     <div id="background-content">
       <h2>CTEPH</h2>
@@ -103,7 +103,7 @@
           vasculature in the unoccluded part of the pulmonary vasculature similar to idiopathic pulmonary hypertension. The added resistance leads the right heart increasing
           in volume (hypertrophy) to maintain cardiac output, which eventually fails and leads to decompensation of the right heart and dyssynchrony between the left and
           right heart.</figurecaption>
-        </figure>
+      </figure>
       <p>Chronic thromboembolic pulmonary hypertension (CTEPH) is a form of pulmonary hypertension (PH) caused by an increase in resistance due to significant organized
         thromboembolic material that is not properly reabsorbed by the body after a pulmonary embolism. The chronic clots impede blood flow in prominent pulmonary arteries and
         lead to small vascular disease and PH due to vascular remodeling from the increased flow and shear stress in the unoccluded area of the vasculature. Patients with CTEPH
@@ -167,6 +167,32 @@
         measurements concerning the heart and the pulmonary vasculature that are not currently measured in patients preoperatively. Taking these measurements, Receiver
         Operator Characteristic (ROC) Curve Analysis was used to identify parameters that best separate and predict good and bad outcomes.</b></p>
         <h2>Mean Pulmonary Arterial Pressure (mPAP) and Pulmonary Artery Pulse Pressure (PP) Fitting</h2>
+        <figure>
+          <img src="img\Figure1_WorkFlow.png" />
+          <figurecaption><br><b>Figure 1:</b> Generalized process for obtaining a desired mPAP and pulmonary pulse pressure starting from a reference file. While generating
+            the reference CTEPH patients (low, medium and high severity CTEPH), the reference file provided by CircAdapt was used. Patient specific simulations were then
+            carried out from the closest reference CTEPH file (in mPAP and PP) as a starting point.</figurecaption>
+        </figure>
+        <figure>
+          <img src="img\Table1_ID.png" />
+          <figurecaption><br><b>Table 1:</b> Comparison of Preoperative Measured and Simulated Values for Average CTEPH Simulations in Case III.</figurecaption>
+        </figure>
+        <figure>
+          <img src="img\Figure2_ID.png" />
+          <figurecaption><br><b>Figure 2:</b> Representation of how the algorithm fits the measured patient value. The red line represents the patient data (target value) and
+            the blue line represents the model’s output.</figurecaption>
+        </figure>
+        <figure>
+          <img src="img\Figure3.png" />
+          <figurecaption><br><b>Figure 3:</b> Receiver Operator Characteristic Curve generated to evaluate the performance of mPAP as a binary classifier of bad and good
+            outcomes for 36 CTEPH patients.</figurecaption>
+        </figure>
+        <figure>
+          <img src="img\Table 2 (Gantt Chart).png" />
+          <figurecaption><br><b>Table 2:</b> Gantt Chart detailing the timeline and progression of the project until the end of Winter Quarter during the Design phase
+            of the project. The Fall quarter was spent writing a Design Proposal, and Spring quarter was reserved to put together a final report and present the
+            project at BE day, website, and video form.</figurecaption>
+        </figure>
         <p>In order to simulate CTEPH on a patient-specific basis, reference CTEPH simulations were first generated to cut down on computational time. This was done to
         initialize our patient-specific simulations to ensure that our simulations would converge to a steady-state solution already in bounds of the CTEPH/PH regime.
         Using our patient sample, we separated patients into low, medium, and high severity CTEPH groups based on their mPAP values and derived average preoperative
@@ -178,6 +204,59 @@
         Although AdaptExc was prescribed to be used along with increasing heart rate and cardiac output to simulate exertion (Walmsley, 2015), this was not done since
         this would drastically increase our computational time (which became a big issue), and patients with CTEPH typically cannot exercise due to their shortness of
         breath. A generalized schematic of this process for generating the CTEPH reference patients (and later the patient specific simulations) is shown in Figure 1.</p>
+        <p>The mPAP and the pulmonary artery pressure drop were selected for fitting because these parameters account for the constant and pulsatile pressure loading
+          conditions for the right ventricle and control the resistance and stiffness components of the model. This is a build off of Lumens’ dissertation where pulmonary
+          pressure drop was increased to simulate pulmonary hypertension.<sup>1</sup><br><br>
+          In our fitting algorithm, the mean arteriovenous pulmonary pressure drop was incremented by a large change, followed by AdaptRest (50 cardiac cycles) and AdaptExc
+          (100 cardiac cycles) adaptations to allow for adaptations to the vessels and the heart. Depending on where the current simulation lies (either past or before the
+          target mPAP with respect to the previous solution) the pulmonary drop was either halved or kept constant. This was done until the mPAP we are trying to fit was
+          obtained after the simulation. Afterwards, the pulmonary arterial stiffness exponent was incremented by some large change, followed by the same adaptation protocol
+          to match the pulmonary pulse pressure. Unlike pulmonary pressure drop which was able to increment continuously (using the previous solution as a starting point),
+          this was not possible with the pulmonary artery stiffness exponent. This is due to CircAdapt’s nonlinear behavior in solving for pressures in the ‘ArtVenV2P’
+          function and is something to consider for future investigation. If the mPAP and pulmonary artery pulse pressure values were not within 5% of target values, then
+          this process went through iterations until this condition was met by alternating fitting mPAP or pulmonary pulse pressure. Figure 2, shows the dampening process we
+          used for the simulation to settle at a desired mPAP or pulse pressure target shown in red. The patients used these three CTEPH reference simulations (low, medium,
+          or high) as starting points using the same fitting algorithm to reach patient-specific values of mPAP and pulmonary artery pulse pressure.</p>
+        <h2>ROC Analysis</h2>
+        <p>Following patient-specific simulations, 30 different parameters that characterize general hemodynamics, heart function and vessel parameters were taken from all
+          36 patients to perform ROC analysis. It is not possible to measure many of these parameters, but there are some that are measurable that aren’t currently being
+          investigated that could potentially be correlated to patient outcomes after PTE which could lead to insight on CTEPH pathobiology, development, and have some
+          prognostic value. <br><br>ROC curves evaluates the performance of a binary classifier system as its discrimination threshold is varied. In this case, a patient
+          with a bad outcome was defined to have a postoperative mPAP of above 25 mmHg because pulmonary hypertension is defined as having a mPAP of above 25 mmHg.
+          Conversely a patient with good outcome was defined as having a postoperative mPAP of 25 mmHg or lower. After categorizing our 36 patients by bad and good
+          outcomes, we normalized each parameter to its binary response (i.e. bad or good outcome) for each patient using a linear regression model. An ROC curve was then
+          generated for each parameter by plotting the true positive rate (TPR) against the false positive rate (FPR) at various threshold settings. For our analysis, the
+          TPR was defined as the likelihood that the parameter of interest correctly predicts that a bad-outcome patient had a bad outcome for a select threshold value of
+          that parameter. FPR was defined as the likelihood that the parameter of interest incorrectly predicts that a good-outcome patient had a bad outcome for that same
+          threshold. A sample ROC curve for mPAP is shown in Figure 3. Finally, once all ROC curves were generated, the area under the curve (AUC) was calculated for each
+          ROC curve to quantify the performance of the parameter as a classifier of bad and good outcomes. A perfect classifier is defined to have an AUC value of 1.0,
+          while a poor classifier has an AUC value of 0.5 and is equivalent to random guessing. The final AUC values of our ROC curve analysis can be found in Result
+          Section.</p>
+        <h2>Environmental, Social, Ethical, Health &amp Safety Issues</h2>
+        <p>The principal concern for safety regarding this model is that while it is intended to be a diagnostic tool, the model itself should not replace any physician
+          expertise, but serve as an aid for medical decisions. Ethical standards for medical research are to be met in research and development of the model, with
+          safeguards to protect patient anonymity as part of the Health Insurance Portability and Accountability Act (HIPAA). All patient data received from UCSD’s
+          Sulpizio Cardiovascular Center will be anonymized for patient-specific simulations. The model should not store any of the patient data to comply with HIPAA.
+          Environmental protection, biocompatibility, sustainability, FDA regulations, and durability do not apply to computational models. It is only after this model
+          is validated and proven reliable with CTEPH cases, such as the documented cases from the last five years, that there will be public acceptance by physicians for
+          the model’s use in clinical applications. Working at UCSD in collaboration with the Sulpizio Cardiovascular Center is the perfect environment to build this
+          model because UCSD treats more CTEPH patients in a year than any other institution. Thus, there are many available resources, such as greater patient datasets
+          to integrate in our research and expert clinicians in the CTEPH field. It is only through experimental use at UCSD, the leading expert center on CTEPH, that
+          this model can gain traction in the medical field and help propagate diagnostic insight to other centers.</p>
+        <h2>Economics</h2>
+        <p>There are no specialized materials or equipment required to build a prototype computational model. Currently, only preoperative CO, mPAP, PP, and
+          postoperative mPAP, PP and CO were used. For future work, some of the data needed may include pressure waveforms and PVR measurements from right heart
+          catheterizations and data generated by echocardiograms.<br><br>
+          The costs for building the design will include four computers (8GB RAM Computer Standard Cost: $1,000) with MATLAB (Standard Individual Price: $2,150) for
+          each team member. UCSD’s free Academic License of MATLAB will be used during the R&ampD of the model before attempting any commercialization. The CircAdapt
+          source code (open-source) must be downloaded from the <a href="www.circadapt.org/downloads">CircAdapt Website</a></p>
+          <h2>References</h2>
+          <ol>
+            <li>Lumens, J.E. Patient-Specific Cardiovascular Modeling in Pulmonary Hypertension. Diss. Maastricht U, 2010. S.I.: Dlgraphics, 2010.</li>
+            <li>Walmsley J, Arts T, Derval N et al. Fast Simulation of Mechanical Heterogeneity in the Electrically Asynchronous Heart Using the MultiPatch Module. PLoS
+              Comput Biol 2015;11:e1004284.</li>
+          </ol>
+          <br><br><br><p>Written By Hanwen Wang</p>
     </div>
     <div id="results-content">
       <h2>CTEPH Simulations via CircAdapt</h2>

@@ -5,7 +5,7 @@ function main() {
   $("#implementeddesign-content").hide();
   $("#results-content").hide();
   $("#futuredirections-content").hide();
-  $(".button").on('click', function() {
+  $('.button').on('click', function() {
     $(".button").removeClass("active");
     $(this).addClass("active");
     $(".content").children().hide();
